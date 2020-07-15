@@ -1,4 +1,16 @@
-<h2>Counter</h2>
-<p>Sets done: {{ setsDone }}</p>
-<button mat-stroked-button (click)="setDone()">Done!</button>
-<button mat-stroked-button (click)="setsReset()">Reset</button>
+<p class="sets" [ngClass]="{'mobile-font': isMobile}">Sets done: {{ setsDone }}</p>
+<button
+    class="done"
+    [ngClass]="{'mobile-font': isMobile}"
+    mat-stroked-button
+    (click)="setDone()"
+>
+    Done!
+</button>
+<button
+    [ngClass]="{'mobile-font': isMobile}"
+    mat-stroked-button
+    (click)="setsReset()"
+>
+    Finish!
+</button>

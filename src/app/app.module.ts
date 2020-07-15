@@ -11,16 +11,20 @@ import { CounterComponent } from './counter/counter.component';
 // materials
 import { MatButtonModule } from '@angular/material/button';
 
+// cdk
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CounterComponent
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
+    LayoutModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule
   ],
