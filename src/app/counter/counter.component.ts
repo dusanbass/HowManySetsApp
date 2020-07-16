@@ -18,11 +18,11 @@ export class CounterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  setDone() {
+  setDone(): void {
     this.setsDone = this.setsDone + 1;
   }
 
-  setsReset() {
+  setsReset(): void {
     this.setsDone = 0;
   }
 
