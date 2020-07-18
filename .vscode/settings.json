@@ -6,6 +6,8 @@
         "jasminewd",
         "mixins",
         "ngsw",
-        "tslib"
+        "tslib",
+        "webp",
+        "woff"
     ]
 }

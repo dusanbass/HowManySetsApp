@@ -10,20 +10,26 @@ import { CounterComponent } from './counter/counter.component';
 
 // materials
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 // cdk
 import { LayoutModule } from '@angular/cdk/layout';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
+    ExerciseComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
     LayoutModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule
