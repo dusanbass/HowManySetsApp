@@ -12,6 +12,7 @@ import { CounterComponent } from './counter/counter.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 // cdk
 import { LayoutModule } from '@angular/cdk/layout';
@@ -30,6 +31,7 @@ import { ExerciseComponent } from './exercise/exercise.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
     LayoutModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule

@@ -1,10 +1,31 @@
-<mat-form-field
-    appearance="standard"
-    class="exercise"
+<mat-grid-list
+    cols="4"
+    rowHeight="70px"
+    gutterSize="15"
 >
-    <input
-        matInput
-        placeholder="Simple placeholder"
-        required
-    >
-</mat-form-field>
+    <mat-grid-tile colspan="3">
+        <mat-form-field
+            appearance="standard"
+            class="input"
+        >
+            <input
+                matInput
+                placeholder="Exercise name"
+                required
+            >
+        </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1">
+        <mat-form-field
+            appearance="standard"
+            class="input"
+        >
+            <input
+                matInput
+                type="number"
+                placeholder="#reps"
+                required
+            >
+        </mat-form-field>
+    </mat-grid-tile>
+</mat-grid-list>
